@@ -5,16 +5,56 @@
     "playlists": {
         "games": [
             {
-                "title": "The Last Of Us",
-                "url": "bbb",
-                "thumb": "game_thumb"
+                "title": "CHUMBO GROSSO! - The Last of Us Parte 2",
+                "url": "https://www.youtube.com/watch?v=ipONCLBheuw&t",
+                "thumb": "https://i.ytimg.com/vi/ipONCLBheuw/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCmW2uHHckTS8GahsTDxmjg4e5N4w"
+            },
+            {
+                "title": "FUSCÃO INSANO no Forza Horizon 5",
+                "url": "https://www.youtube.com/watch?v=7_sQmv0vAa4",
+                "thumb": "https://i.ytimg.com/vi/7_sQmv0vAa4/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCA3aAtPXzLd0vqSduP0Oks25mtDw"
+            },
+            {
+                "title": "Hollow Knight - All Bosses [No Damage] + Ending",
+                "url": "https://www.youtube.com/watch?v=SE7kje3z9c8",
+                "thumb": "https://i.ytimg.com/vi/SE7kje3z9c8/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA6g2AU-9-Jbfm60DyRCCdRg9Rmkg"
+            },
+            {
+                "title": "APRENDA A JOGAR Stardew Valley! Nova série #01",
+                "url": "https://www.youtube.com/watch?v=yOLJhZrCLpw",
+                "thumb": "https://i.ytimg.com/vi/yOLJhZrCLpw/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBxlVHfrT-jMtIBdwekRXeawba1uQ"
+            },
+            {
+                "title": "O que fazer no Don't Starve Together Quando Está sem Ideias!!",
+                "url": "https://www.youtube.com/watch?v=tg5nzShUydM",
+                "thumb": "https://i.ytimg.com/vi/tg5nzShUydM/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCZqQYPXRdRaIn5Fb-JDsXm5BnwZg"
             }
         ],
-        "front-end": [
+        "programming": [
             {
-                "title": "My video",
-                "url": "aaa",
-                "thumb": "my_thumb"
+                "title": "Um júnior já deveria saber como reduzir a quantidade de IFs de um código (e você, sabe?)",
+                "url": "https://www.youtube.com/watch?v=Lf3ZV0UsnEo",
+                "thumb": "https://i.ytimg.com/vi/Lf3ZV0UsnEo/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDEv-6WmFu8ntnAtxeRwdHgZ2fu7Q"
+            },
+            {
+                "title": "Como personalizar o seu perfil no Github (Readme)",
+                "url": "https://www.youtube.com/watch?v=TsaLQAetPLU",
+                "thumb": "https://i.ytimg.com/vi/TsaLQAetPLU/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCR31TuN3nzukrHTKaYej4bNzlX1A"
+            },
+            {
+                "title": "Como aprender melhor? Com Diogo Pires | #HipstersPontoTube",
+                "url": "https://www.youtube.com/watch?v=uOagLB3uyeU",
+                "thumb": "https://i.ytimg.com/vi/uOagLB3uyeU/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB1yTm91rTlGLXM7TB2iAZFE0ZBJQ"
+            },
+            {
+                "title": "Inteligência Artificial detecta humanos ATRAVÉS de paredes!",
+                "url": "https://www.youtube.com/watch?v=JWuS6q9EYAo",
+                "thumb": "https://i.ytimg.com/vi/JWuS6q9EYAo/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBt8iSCIckRvs1n0VmmkvxweuXiHg"
+            },
+            {
+                "title": "TypeScript // Dicionário do Programador",
+                "url": "https://www.youtube.com/watch?v=gmupEp468lY",
+                "thumb": "https://i.ytimg.com/vi/gmupEp468lY/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDP-SRhlWsgvy8PA7ebzZ7MT3Vm7g"
             }
         ]
     }
