@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ColorModeContext } from "./ColorMode";
 
 const StyledSwitch = styled.div`
+  // CSS do botão switch de do tema
   background-color: #333333;
   border: 0;
   padding: 3px;
@@ -37,21 +38,22 @@ const StyledSwitch = styled.div`
 `;
 
 export default function DarkModeSwitch() {
-    const contexto = React.useContext(ColorModeContext);
+  // Cria o botão switch
+  const contexto = React.useContext(ColorModeContext);  // Pega a função para definir o tema
 
-    return (
-        <StyledSwitch>
-            <input id="darkmode" type="checkbox" onChange={() => {
-                console.log("mudou o state");
-                contexto.toggleMode();
-            }} />
-            <label
-                htmlFor="darkmode"
-                className="darkmode-switch"
-            >
-                <span>🌙</span>
-                <span>☀️</span>
-            </label>
-        </StyledSwitch>
-    )
+  return (
+    <StyledSwitch>
+      <input id="darkmode" type="checkbox" onChange={() => {
+        // O botão switch
+        contexto.toggleMode();
+      }} />
+      <label
+        htmlFor="darkmode"
+        className="darkmode-switch"
+      >
+        <span>🌙</span>
+        <span>☀️</span>
+      </label>
+    </StyledSwitch>
+  )
 }

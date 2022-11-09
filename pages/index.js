@@ -38,6 +38,7 @@ export default HomePage;
 
 
 const StyledHeader = styled.div`
+    // CSS do Header do projeto
     background-color: ${({ theme }) => theme.backgroundLevel1};
     
     img {
@@ -54,14 +55,18 @@ const StyledHeader = styled.div`
     }
 `;
 const StyledBanner = styled.div`
+    // CSS relavionado ao banner
     background-color: #444;
     height: 230px;
     background-image: url(${({bg}) => bg});
 `;
 function Header() {
+    // Definir o Header do projeto
     return (
         <StyledHeader>
+        {/* Coloca o CSS do Header */}
             <StyledBanner bg={config.bg} />
+            {/* Coloca o CSS do Banner */}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
@@ -79,12 +84,15 @@ function Header() {
 
 
 function TimeLine({searchValue, ...props}) {
+    // Toda a Time Line do projeto, feito de forma dinâmica
     const playlistNames = Object.keys(props.playlists);
     // Statement
     // Retorno por expressão
     return (
         <StyledTimeline>
+        {/* Coloca o CSS da TimeLine */}
             {playlistNames.map((playlistName) => {
+                // Mapeia toda a lista de videos para criar a TimeLine
                 const videos = props.playlists[playlistName];
                 // console.log(playlistName);
                 // console.log(videos);
@@ -98,6 +106,7 @@ function TimeLine({searchValue, ...props}) {
                                 const searchValueNormalized = searchValue.toLowerCase();
                                 return titleNormalized.includes(searchValueNormalized);
                             }).map((video) => {
+                                // Retorna o video na TimeLine
                                 return (
                                     <a key={video.url} href={video.url}>
                                         <img src={video.thumb} />

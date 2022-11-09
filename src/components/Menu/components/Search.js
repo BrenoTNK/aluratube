@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 const StyledSearch = styled.div`
+  // CSS da barra de pesquisa
   display: flex;
   flex-direction: row;
   border: 1px solid ${({ theme }) => theme.borderBase};
@@ -40,16 +41,19 @@ const StyledSearch = styled.div`
 // Informação sempre desce
 
 export default function Search({ valorFiltro, setValorFiltro }) {
+  // Cria a barra de pesquisa
+
   // const [busca, setBusca] = React.useState("");
   // console.log("Search", busca);
   const busca = valorFiltro;
   const setBusca = setValorFiltro;
   return (
-      <StyledSearch>
-          <input type="text" onChange={(e) => setBusca(e.target.value)} value={busca}/>
-          <button>
-              🔎
-          </button>
-      </StyledSearch>
+    <StyledSearch>
+    {/* Coloca o CSS da barra de pesquisa */}
+      <input type="text" onChange={(e) => setBusca(e.target.value)} value={busca}/>
+      <button>
+        🔎
+      </button>
+    </StyledSearch>
   );
 }

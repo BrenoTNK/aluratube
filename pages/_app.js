@@ -3,6 +3,7 @@ import { CSSReset } from "../src/components/CSSReset";
 import ColorModeProvider, { ColorModeContext } from "../src/components/Menu/components/ColorMode";
 
 const theme = {
+    // Objeto para definir os temas
     light: {
         backgroundBase: "#f9f9f9",
         backgroundLevel1: "#fff",
@@ -25,6 +26,7 @@ const theme = {
 
 
 function ProviderWrapper(props) {
+    // Hook para iniciar o tema
     return (
         <ColorModeProvider initialMode={"dark"}>
             {props.children}
@@ -34,6 +36,7 @@ function ProviderWrapper(props) {
 
 
 function MyApp({ Component, pageProps }) {
+    // Inicia o projeto
     const contexto = React.useContext(ColorModeContext);
 
     return (
@@ -46,6 +49,7 @@ function MyApp({ Component, pageProps }) {
 
 
 export default function _App(props) {
+    // Serve para juntar tudo e dar set do tema ande de iniciar
     return (
         <ProviderWrapper>
             <MyApp {...props}/>

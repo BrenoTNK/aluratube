@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const CSSReset = createGlobalStyle`
-  /* Reset */
+  /* Cria o CSS Reset de todo o projeto */
   * {
     margin: 0;
     padding: 0;
