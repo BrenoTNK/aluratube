@@ -6,22 +6,22 @@
     "playlists": {
         "games": [
             {
-                "title": "CHUMBO GROSSO! - The Last of Us Parte 2",
+                "title": "Games Eduuu no The Last of Us Parte 2",
                 "url": "https://www.youtube.com/watch?v=ipONCLBheuw&t",
                 "thumb": "https://i.ytimg.com/vi/ipONCLBheuw/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCmW2uHHckTS8GahsTDxmjg4e5N4w"
             },
             {
-                "title": "FUSCÃO INSANO no Forza Horizon 5",
+                "title": "Games Eduuu no Forza Horizon 5",
                 "url": "https://www.youtube.com/watch?v=7_sQmv0vAa4",
                 "thumb": "https://i.ytimg.com/vi/7_sQmv0vAa4/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCA3aAtPXzLd0vqSduP0Oks25mtDw"
             },
             {
-                "title": "Hollow Knight - All Bosses [No Damage] + Ending",
+                "title": "Hollow Knight - All Bosses [No Damage]",
                 "url": "https://www.youtube.com/watch?v=SE7kje3z9c8",
                 "thumb": "https://i.ytimg.com/vi/SE7kje3z9c8/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA6g2AU-9-Jbfm60DyRCCdRg9Rmkg"
             },
             {
-                "title": "APRENDA A JOGAR Stardew Valley! Nova série #01",
+                "title": "APRENDA A JOGAR Stardew Valley! #01",
                 "url": "https://www.youtube.com/watch?v=yOLJhZrCLpw",
                 "thumb": "https://i.ytimg.com/vi/yOLJhZrCLpw/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBxlVHfrT-jMtIBdwekRXeawba1uQ"
             },
@@ -33,7 +33,7 @@
         ],
         "programming": [
             {
-                "title": "Pra que tantos IF's mds?",
+                "title": "Pra que tanto IF mds?",
                 "url": "https://www.youtube.com/watch?v=Lf3ZV0UsnEo",
                 "thumb": "https://i.ytimg.com/vi/Lf3ZV0UsnEo/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDEv-6WmFu8ntnAtxeRwdHgZ2fu7Q"
             },
