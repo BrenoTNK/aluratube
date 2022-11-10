@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import ColorModeProvider, { ColorModeContext } from "../src/components/Menu/components/ColorMode";
+import RegisterVideo from "../src/components/RegisterVideo";
 
 const theme = {
     // Objeto para definir os temas
@@ -27,7 +28,7 @@ const theme = {
 
 
 function ProviderWrapper(props) {
-    // Hook para iniciar o tema
+    // Registra por padrão o tema
     return (
         <ColorModeProvider initialMode={"dark"}>
             {props.children}
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={theme[contexto.mode]}>
             <CSSReset />
             <Component {...pageProps} />
+            <RegisterVideo />
         </ThemeProvider>
     );
 }

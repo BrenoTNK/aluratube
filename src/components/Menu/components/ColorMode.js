@@ -1,7 +1,7 @@
 import React from "react";
 
 export const ColorModeContext = React.createContext({
-    // Cria o modulo para definir o tema
+    // Cria o modulo para definição do tema
     mode: "",
     setMode: () => { alert("Você precisa me configurar primeiro!")  },
     toggleMode: () => { alert("Você precisa me configurar primeiro!")  },
