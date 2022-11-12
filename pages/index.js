@@ -4,10 +4,31 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/TimeLine";
+import { videoService } from "../src/services/videoService";
 
 
 function HomePage() {
+    const service = videoService();
     const [valorFiltro, setValorFiltro] = React.useState("");
+    const [playlists, setPlaylists] = React.useState({});
+
+    // Impede que vire um ciclo infinito
+    React.useEffect(() => {
+        service
+            .getAllVideos()
+            .then((res) => {
+                // Dando certo, atualiza a playlist
+                console.log(res.data);
+                // Forma imutável
+                const novasPlaylists = { ...playlists };
+                res.data.forEach((video) => {
+                    if (!novasPlaylists[video.playlists]) novasPlaylists[video.playlists] = [];
+                    playlists[video.playlists].push(video);
+                });
+                setPlaylists(novasPlaylists);
+            });
+    }, []);
+
 
     return (
         <>

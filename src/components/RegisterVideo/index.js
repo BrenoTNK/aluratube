@@ -1,6 +1,10 @@
 import { StyledRegisterVideo } from "./styles";
 import React from "react";
+import { createClient } from "@supabase/supabase-js";
 
+function getVideoThumb(url) {
+    return `https://img.youtube.com/vi/${url.split("v=")[1]}hqdefault.jpg`;
+}
 
 function useForm(props) {
 // Custom Hook para o formulário
@@ -25,6 +29,11 @@ function useForm(props) {
     };
 }
 
+// Vincula com o Banco de Dados do supabase
+const PROJECT_URL = "https://vltojvklnxrblqndhkoy.supabase.co";
+const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZsdG9qdmtsbnhyYmxxbmRoa295Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgyNzQ3NjksImV4cCI6MTk4Mzg1MDc2OX0.IZ-YGq7LIFJ1xPNjInSnfBjlP1TwiNoCOyp-eA2Jj8E";
+const supabase = createClient(PROJECT_URL, PUBLIC_KEY);
+
 
 export default function RegisterVideo() {
     const formCadastro = useForm({
@@ -45,6 +54,23 @@ export default function RegisterVideo() {
                 <form onSubmit={(e) => {
                 // Ao submitar o Form
                     e.preventDefault();         // Previne que a página recarregue
+                    
+                    // Contrato entre o Front e o Back
+                    supabase.from("video").insert({
+                        title: formCadastro.values.titulo,
+                        url: formCadastro.values.url,
+                        thumb: getVideoThumb(formCadastro.values.url),
+                        playlist: "jogos",
+                    })
+                    .then((res) => {
+                        // Caso dê certo!
+                        console.log(res);
+                    })
+                    .catch((err) => {
+                        // Caso dê erro!
+                        console.log(err);
+                    });
+
                     setFormVisivel(false);      // Fecha o formulário ao submitar
                     formCadastro.clearForm();   // Limpa o formulário
                 }}>
